@@ -3,8 +3,8 @@
 # str() لتحويل البيانات إلى بيانات من نوع النصي
 # type() يستخدم لكي تتمكن من معرفة نوع البيانات لقيمة الذي تحددها 
 
-variable = "2021.5"
-variable = float(variable )
-variable = int(variable)
+# number1 = 20
+# result = str(number1)  + str(21)
 
-print(type(variable)  ,variable)
+text = "2022"
+print(int(text) )
