@@ -1,15 +1,13 @@
-languages = {"html","css","js","bootstrap"}
+counter = 0
+text = "codershiyar"
 
-# counter =1
-# for language in languages:
-#     print(str(counter) +" : "+language)
-#     counter+=1
-i =1
-json = {"name": "Coder Shiyar" , "age" : 21 ,"country":"Netherlands" }
-for data in json :
-    if data == "age": 
+while counter < 10:
+    counter += 1
+    if counter ==5 or counter ==8:
         break
-    print(str(i) +" : "+ str(json[data]))
-    i+=1
+    print(counter)
+    
 else:
-    print("اكتمل من عرض بيانات ضمن فور لوب")
+    print("اكتمل تكرار تنفيذ اوامر")
+    
+    

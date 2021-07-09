@@ -1,14 +1,24 @@
-number1 = input("Enter number 1 :")
-number2 = input("Enter number 2 :")
-print(int(number1)  + int(number2) )
+import datetime
 
-# username = input("enter your username ")
-# print("username is :" + username)
-# ---------------------------------------------------------
-# # Python allows for user input.
-# تسمح لغة بايثون بإستخدام حقول للكتابة البيانات 
-# ---------------------------------------------------------
-# That means we are able to ask the user for input.
-# هذا يعني أننا قادرون على مطالبة المستخدم بالإدخال.
-# ---------------------------------------------------------
+datetime = datetime.datetime.now()
+hour = datetime.strftime("%H:%M:%S") 
+print(hour)
+#----------------------------
+#  strftime()  - 
+#----------------------------
+#  datetime  - 
+#----------------------------
+
+# %H	Hour 00-23	                            17	
+# %I	Hour 00-12	                            05	
+# %p	AM/PM	                                PM	
+# %M	Minute 00-59	                        41	
+# %S	Second 00-59	                        08	
+# %c	Local version of date and time	Mon Dec 31 17:41:00 2018	
+# %X	Local version of time	17:41:00
+
+
+
+
+
 

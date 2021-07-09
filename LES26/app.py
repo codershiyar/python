@@ -1,24 +1,18 @@
-import datetime
 
-datetime = datetime.datetime.now()
-hour = datetime.strftime("%H:%M:%S") 
-print(hour)
-#----------------------------
-#  strftime()  - 
-#----------------------------
-#  datetime  - 
-#----------------------------
+# def printMessage(name,message):
+#     print("Hi " + name + " " + message)
 
-# %H	Hour 00-23	                            17	
-# %I	Hour 00-12	                            05	
-# %p	AM/PM	                                PM	
-# %M	Minute 00-59	                        41	
-# %S	Second 00-59	                        08	
-# %c	Local version of date and time	Mon Dec 31 17:41:00 2018	
-# %X	Local version of time	17:41:00
+# printMessage("Coder Shiyar","welcome to python course")
 
+# def printMessage(**langauges):
+#     for lang in langauges:
+#         print(langauges[lang] );
+   
+# printMessage(name1= "html",name2="css")    
 
-
-
-
-
+def printMessage(*langauges):
+    count = 1
+    for lang in langauges:
+        print(str(count) + " " + lang);
+        count += 1
+printMessage("html","css","javascript")    

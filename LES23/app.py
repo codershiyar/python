@@ -1,18 +1,15 @@
+languages = {"html","css","js","bootstrap"}
 
-# def printMessage(name,message):
-#     print("Hi " + name + " " + message)
-
-# printMessage("Coder Shiyar","welcome to python course")
-
-# def printMessage(**langauges):
-#     for lang in langauges:
-#         print(langauges[lang] );
-   
-# printMessage(name1= "html",name2="css")    
-
-def printMessage(*langauges):
-    count = 1
-    for lang in langauges:
-        print(str(count) + " " + lang);
-        count += 1
-printMessage("html","css","javascript")    
+# counter =1
+# for language in languages:
+#     print(str(counter) +" : "+language)
+#     counter+=1
+i =1
+json = {"name": "Coder Shiyar" , "age" : 21 ,"country":"Netherlands" }
+for data in json :
+    if data == "age": 
+        break
+    print(str(i) +" : "+ str(json[data]))
+    i+=1
+else:
+    print("اكتمل من عرض بيانات ضمن فور لوب")

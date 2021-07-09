@@ -1,20 +1,18 @@
-import file2 as app2
 
-print(app2.name)
+# def printMessage(name,message):
+#     print("Hi " + name + " " + message)
 
-app2.printhallo()
+# printMessage("Coder Shiyar","welcome to python course")
 
-# Pyhton Modules  -  وحدات بايثون
-# -----------------------------------
-# ستتعلم اثناء هذا الدرس كيفية ربط
-#  ملفات بايثون ببعضهم 
-#  او بالاختصار كيفية استرداد
-#  اوامر بايثون من ملف بايثون اخر
-# -----------------------------------
-# import -  استيراد
-# -----------------------------------
-# الأمر إمبورت يتم استخدامها لاسترداد 
-# اوامر بايثون من ملف بايثون اخر 
-# او لأسترداد اوامر من مكاتب بايثون 
-# الجاهزة لأستخدام تلك اوامر في 
-# ملف بايثون خاص بك عندما ترغب بذلك
+# def printMessage(**langauges):
+#     for lang in langauges:
+#         print(langauges[lang] );
+   
+# printMessage(name1= "html",name2="css")    
+
+def printMessage(*langauges):
+    count = 1
+    for lang in langauges:
+        print(str(count) + " " + lang);
+        count += 1
+printMessage("html","css","javascript")    

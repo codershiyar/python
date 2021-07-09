@@ -1,26 +1,37 @@
-import json
-# json.dumps()        يمكنك استخدامها لتحويل بيانات من نوع اوبجكت ديكجوناري إلى بيانات بصيغة جي سون
-# json.loads() يتم استخدامها لتحويل البيانات مكتوبة بصيغة جي سون إلى بيانات بصيغة اوبجكت ديكجوناري
+import math
+
+numbers = [20,21,10,27] 
+result = math.isclose(1.2,1.2000)
+print(result )
+
+# Python Math - الرياضيات في البايثون
+#--------------------------------------------------------------------------
+# min()               لإيجاد لإيجاد العدد الأصغر من بين مجموعة اعداد تحدده
+# max()                      لإيجاد العدد الأكبر من بين مجموعة اعداد تحدده
+# abs()                              لإيجاد قيمة المطلقة للعدد الذي تحدده
+# pow(number1,number2)             لإيجاد ناتج للعدد الذي تحدده مع قوة اس
+# math.sqrt()                                          لإيجاد جزر التربيعي 
+# math.ceil()                         يقرب العدد للأعلى إلى اقرب عدد صحيح
+# math.floor()                        يقرب العدد للأسفل إلى اقرب عدد صحيح
+# math.remainder()           يقوم بجلب الباقي عندما تقسم عددين مع بعضهم
+# math.isclose(n1,n2) يستخدم لمعرفة ان كان العددين قريبين من بعضهم او لا
+#--------------------------------------------------------------------------
+# The math.pi constant, returns the value of PI (3.14...):
+# The min() and max() functions can be used to find the lowest 
+# or highest value in an iterable:
+# The abs() function returns the absolute (positive) value of the specified number:
+# The pow(x, y) function returns the value of x to the power of y (xy).
+# Python has also a built-in module called math, which extends the list of mathematical functions.
+# To use it, you must import the math module:
+# The math.sqrt() method for example, returns the square root of a number:
+# The math.pi constant, returns the value of PI (3.14...):
+# The math.remainder() method returns the remainder of x with respect to y.
+# The math.isclose() method checks whether two values are close to each other, or not. Returns True if the values are close, otherwise False.
 
 
-data= '{"name": "Shiyar",  "age" : 21 ,  "isMaried" : false }'
-data_dict = json.loads(data)
-print(data_dict["name"]   )         
-print( type(json.loads(data))  )  
 
 
-# data= {
-#      "name": "Shiyar",
-#       "age" : 21 ,
-#       "isMaried" : False
-#     }
-
-# print( json.dumps(data) )         
-# print( type(json.dumps(data))  )  
 
 
-# If you have a JSON string, you can parse it by using the json.loads() method.
-# If you have a Python object, you can convert it into a JSON 
-# string by using the json.dumps() method.
 
 
